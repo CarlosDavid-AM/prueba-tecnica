@@ -3,9 +3,13 @@ body {
   margin: 0;
 }
 
-.container {
-  padding: 0 20px;
+.header {
+  padding: 0 4rem;
   background-color: #202020;
+}
+
+.main-body {
+  padding: 0 4rem;
 }
 
 .Main-Header {
@@ -18,4 +22,11 @@ body {
 .user {
   height: 100px;
   border-radius: 50px;
+}
+
+.seccion {
+  background-color: #FDFBFB;
+  padding: 20px;
+  margin-top: 5rem;
+  border-radius: 20px;
 }
