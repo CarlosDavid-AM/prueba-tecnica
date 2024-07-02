@@ -1,37 +1,10 @@
 "use client"
 
-import React, { useState } from "react"
-import {initialData, typeData} from '@/types/types'
+import { useHandle } from "@/hooks/useHandle"
 
 const ContactForm = () => {
 
-  const [datos, setDatos] = useState<typeData[]>([])
-  const [formDatos, setFormDatos] = useState<typeData>(initialData)
-
-  type htmlInput = HTMLInputElement | HTMLTextAreaElement
-
-  const handleChange = (e: React.ChangeEvent<htmlInput>) => {
-    setFormDatos({
-      ...formDatos,
-      [e.target.name]: e.target.value
-    })
-  }
-
-
-  const handleSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
-    evt.preventDefault()
-
-    const newDatos = {
-      id: Date.now(),
-      nombre: formDatos.nombre,
-      email: formDatos.email,
-      descripcion: formDatos.descripcion
-    }
-
-    setDatos([...datos, newDatos])
-    console.log(datos)
-    setFormDatos(initialData)
-  }
+   const {handleChange, handleSubmit, formDatos, error, enviado} = useHandle()
 
   return (
     <div className='seccion'>
@@ -63,6 +36,17 @@ const ContactForm = () => {
           <textarea id="message" rows={10} name="descripcion" value={formDatos.descripcion} required 
           onChange={handleChange} ></textarea>
         </div>
+        { 
+          error && 
+          <p className='error' style={{color: 'red'}}>
+            {error}
+          </p> 
+        }
+
+        {
+          enviado && 
+          <p> {enviado} </p>
+        }
         <button>
           Enviar
         </button>
