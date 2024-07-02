@@ -1,4 +1,5 @@
 import About from "@/component/About"
+import ContactForm from "@/component/ContactForm"
 import Interests from "@/component/Interests"
 import MainHeader from "@/component/MainHeader"
 
@@ -13,6 +14,8 @@ const page = () => {
         <About />
 
         <Interests />
+
+        <ContactForm />
       </div>
     </div>
   )
