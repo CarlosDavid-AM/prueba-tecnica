@@ -3,13 +3,28 @@ body {
   margin: 0;
 }
 
+ol {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+li {
+  background-color: #202020;
+  color: white;
+  padding: 10px;
+  border-radius: 10px
+}
+
 .header {
   padding: 0 4rem;
   background-color: #202020;
 }
 
 .main-body {
-  padding: 0 4rem;
+  padding: 0 5rem;
 }
 
 .Main-Header {

@@ -1,4 +1,5 @@
 import About from "@/component/About"
+import Interests from "@/component/Interests"
 import MainHeader from "@/component/MainHeader"
 
 const page = () => {
@@ -10,6 +11,8 @@ const page = () => {
       
       <div className="main-body">
         <About />
+
+        <Interests />
       </div>
     </div>
   )
