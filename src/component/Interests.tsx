@@ -2,9 +2,7 @@ const Interests = () => {
   return (
     <div className='seccion'>
       <div>
-        <h2>
-          Intereses
-        </h2>
+        <h2> Intereses </h2>
 
         <ol>
           <li>Intereses 1</li>

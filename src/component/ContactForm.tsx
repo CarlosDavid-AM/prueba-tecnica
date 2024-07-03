@@ -8,34 +8,27 @@ const ContactForm = () => {
 
   return (
     <div className='seccion'>
-      <h2>
-        Contacto
-      </h2>
+      <h2> Contacto </h2>
 
       <form onSubmit={handleSubmit}>
         <div className='aporte'>
-          <label htmlFor="text">
-            Nombre
-          </label>
+          <label htmlFor="text"> Nombre </label>
           <input type="text" id="text" name="nombre" value={formDatos.nombre} required
           onChange={handleChange} />
         </div>
 
         <div className='aporte'>
-          <label htmlFor="email">
-            Email
-          </label>
+          <label htmlFor="email"> Email </label>
           <input type='email' id="email" name="email" value={formDatos.email} required
           onChange={handleChange} />
         </div>
 
         <div className='aporte'>
-          <label htmlFor="message">
-            Mensaje
-          </label>
+          <label htmlFor="message"> Mensaje </label>
           <textarea id="message" rows={10} name="descripcion" value={formDatos.descripcion} required 
           onChange={handleChange} ></textarea>
         </div>
+
         { 
           error && 
           <p className='error' style={{color: 'red'}}>
@@ -47,9 +40,8 @@ const ContactForm = () => {
           enviado && 
           <p> {enviado} </p>
         }
-        <button>
-          Enviar
-        </button>
+
+        <button> Enviar </button>
       </form>
     </div>
   )

@@ -2,9 +2,7 @@ const About = () => {
   return (
     <div className='seccion'>
       <div>
-        <h2>
-          Sobre Mi
-        </h2>
+        <h2> Sobre Mi </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nihil quasi cum at doloremque impedit eius consectetur dolore? Assumenda modi sit, impedit tempora odio sint ipsum velit animi? Doloremque, earum.
           Aspernatur sint, laudantium mollitia quis incidunt, voluptate, hic aliquam aliquid non debitis molestiae at dignissimos dolorem iusto nesciunt reiciendis? Ipsum dolorem neque laborum vitae necessitatibus alias rem facilis. Quis, tempora.

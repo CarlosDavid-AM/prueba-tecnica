@@ -11,3 +11,5 @@ export interface typeData {
   email: '',
   descripcion: ''
 }
+
+export type htmlInput = HTMLInputElement | HTMLTextAreaElement
